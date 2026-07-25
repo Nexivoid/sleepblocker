@@ -91,6 +91,46 @@ body {
   outline-offset: 0.3rem;
 }
 
+.usage-button {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+
+  transition: 0.25s ease;
+  z-index: 1000;
+}
+
+.usage-button img {
+  width: 26px;
+  height: 26px;
+}
+
+.usage-button:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateX(-50%) translateY(-3px);
+}
+
 @media (max-width: 30rem) {
   .hero {
     justify-content: center;
