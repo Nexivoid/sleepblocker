@@ -94,8 +94,7 @@ body {
 .usage-button {
   position: fixed;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 20px;
 
   display: flex;
   align-items: center;
@@ -128,7 +127,7 @@ body {
 
 .usage-button:hover {
   background: rgba(255, 255, 255, 0.22);
-  transform: translateX(-50%) translateY(-3px);
+  transform: translateY(-3px);
 }
 
 @media (max-width: 30rem) {
