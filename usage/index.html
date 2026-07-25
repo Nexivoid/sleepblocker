@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sleep Blocker - Usage</title>
+
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+
+    <script src="script.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            background: #000;
+            color: white;
+            font-family: 'Inter', Arial, sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin: 0 0 30px;
+        }
+
+        .box {
+            margin-top: 20px;
+            padding: 30px;
+            border: 1px solid #222;
+            border-radius: 15px;
+            background: #080808;
+            box-shadow: 0 0 20px rgba(255,255,255,0.04);
+        }
+
+        .text {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        b {
+            color: white;
+            font-weight: 700;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 25px;
+            left: 25px;
+
+            width: 60px;
+            height: 60px;
+
+            background: #0066ff;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+
+            box-shadow: 0 0 25px rgba(0, 102, 255, 0.6);
+
+            transition: 0.25s ease;
+        }
+
+        .back-button img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            transition: 0.25s ease;
+        }
+
+        .back-button:hover {
+            background: #3388ff;
+            transform: scale(1.12);
+            box-shadow: 0 0 35px rgba(0, 140, 255, 0.9);
+        }
+
+        .back-button:hover img {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="../" class="back-button">
+    <img src="sapl.png" alt="Back">
+</a>
+
+<div class="container">
+
+    <img class="icon" src="icon.ico" alt="Sleep Blocker Icon">
+
+    <h1>Sleep Blocker - Usage</h1>
+
+    <div class="box text">
+        <p>
+            When you start <b>SleepBlocker.exe</b>, the application will run in the background
+            and prevent your computer from entering sleep mode.
+        </p>
+
+        <p>
+            A tray icon will appear near the Windows clock.
+            Left-clicking the icon opens this usage page.
+        </p>
+
+        <p>
+            Right-click the tray icon to access controls.
+            You can pause, resume, or cancel the sleep blocking process.
+        </p>
+
+        <p>
+            When paused, Sleep Blocker remembers the exact moment it stopped
+            and continues from that point when resumed.
+        </p>
+
+        <p>
+            Keep Sleep Blocker running when you need your computer to stay awake,
+            such as during downloads, long tasks, or background operations.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
