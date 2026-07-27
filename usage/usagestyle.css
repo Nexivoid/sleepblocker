@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    background: #080808;
+    box-shadow: 0 0 20px rgba(255,255,255,0.04);
+}
+
+.text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+b {
+    color: white;
+    font-weight: 700;
+}
+
+.back-button {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #0066ff;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.6);
+
+    transition: 0.25s ease;
+}
+
+.back-button img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: 0.25s ease;
+}
+
+.back-button:hover {
+    background: #3388ff;
+    transform: scale(1.12);
+    box-shadow: 0 0 35px rgba(0, 140, 255, 0.9);
+}
+
+.back-button:hover img {
+    transform: translateX(-5px);
+}
